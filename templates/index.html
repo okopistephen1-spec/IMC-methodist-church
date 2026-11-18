@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Methodist Church | Parish Home</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <div class="header-inner">
+
+            <!-- Church Logo and Name -->
+            <a href="/" class="church-brand">
+
+                <img
+                    src="{{ url_for('static', filename='images/methodist-logo.jpeg') }}"
+                    alt="Methodist Church Nigeria Logo"
+                    class="brand-emblem"
+                >
+
+                <span class="brand-text">
+                    <strong>IMC Immanuel Methodist Church</strong>
+                    <small>In God we Trust</small>
+                </span>
+
+            </a>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+
+                <a href="#give" class="header-give">
+                    <span aria-hidden="true">❤️</span>
+                    Donate
+                </a>
+
+                <a href="#profile"
+                   class="profile-button"
+                   aria-label="Profile">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="8" r="3.5"/>
+                        <path d="M5 20c.5-4 3-6 7-6s6.5 2 7 6"/>
+                    </svg>
+
+                </a>
+
+                <!-- Menu Button -->
+                <label for="menu-toggle"
+                       class="menu-button"
+                       aria-label="Open navigation">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- NAVIGATION CHECKBOX -->
+    <input type="checkbox"
+           id="menu-toggle"
+           class="menu-toggle">
+
+
+    <!-- DRAWER BACKDROP -->
+    <label for="menu-toggle"
+           class="menu-backdrop"
+           aria-label="Close navigation"></label>
+
+
+    <!-- RIGHT NAVIGATION DRAWER -->
+    <aside class="mobile-drawer">
+
+        <!-- Drawer Header -->
+        <div class="drawer-header">
+
+            <div class="drawer-brand">
+
+                <span class="drawer-brand-name">
+                    Immanuel Methodist<br>Church
+                </span>
+
+                <small>In God we Trust</small>
+
+            </div>
+
+            <label for="menu-toggle"
+                   class="drawer-close"
+                   aria-label="Close navigation">
+
+                &times;
+
+            </label>
+
+        </div>
+
+
+        <!-- Sunday Information -->
+        <div class="drawer-service">
+
+            <span>This Sunday</span>
+
+            <strong>Sunday Worship</strong>
+
+        </div>
+
+
+        <!-- Navigation Links -->
+        <nav class="drawer-navigation">
+
+            <a href="/" class="active">
+                <span>⌂</span>
+                Home
+            </a>
+
+            <a href="/about">
+                <span>📜</span>
+                About Us
+            </a>
+
+            <a href="#leaders">
+                <span>🧑🏾‍💼</span>
+                Leaders
+            </a>
+
+            <a href="#services">
+                <span>♧</span>
+                Services
+            </a>
+
+            <a href="#events">
+                <span>🗓️</span>
+                Events
+            </a>
+
+            <a href="#ministries">
+                <span>♧</span>
+                Ministries
+            </a>
+
+            <a href="#sermons">
+                <span>📖</span>
+                Sermons
+            </a>
+
+            <a href="#contact">
+                <span>📞</span>
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- Give Button -->
+        <a href="#give" class="drawer-give">
+            ❤️ &nbsp; Donate to the Church
+        </a>
+
+    </aside>
+
+
+    <!-- HOMEPAGE CONTENT WILL BE BUILT BELOW THE HEADER -->
+    <main class="homepage-content">
+
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+
+            <div class="hero-image">
+                <img
+                    src="{{ url_for('static', filename='images/church-hero.jpeg') }}"
+                    alt="Welcome to Immannuel Methodist Church"
+                >
+            </div>
+
+            <div class="hero-content">
+
+                <div class="hero-location">
+                    <span class="location-dot"></span>
+                    IMMANUEL METHODIST CHURCH
+                </div>
+
+                <h1>
+                    All Are Welcome at the
+                    <span>Lord's Table.</span>
+                </h1>
+
+                <p>
+                    A place of faith, hope and love. Come as you are,
+                    worship with us, grow in God's grace and become
+                    part of our church family.
+
+                    In God We Trust
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#services" class="hero-primary-button">
+                        Join Us This Sunday
+                        <span>→</span>
+                    </a>
+
+                    <a href="#about" class="hero-secondary-button">
+                        Discover Our Church
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SUNDAY WORSHIP SECTION -->
+        <section class="sunday-section" id="services">
+
+            <div class="sunday-container">
+
+                <div class="sunday-heading">
+                    <span class="sunday-label">COME WORSHIP WITH US</span>
+
+                    <h2>Join Us This Sunday</h2>
+
+                    <p>
+                        There's a place for you here. Come and experience
+                        God's love, fellowship and the joy of worship.
+                    </p>
+                </div>
+
+                <div class="sunday-content">
+
+                    <div class="sunday-main">
+
+                        <div class="sunday-icon">✝</div>
+
+                        <span class="service-day">EVERY SUNDAY</span>
+
+                        <h3>Sunday Worship Service</h3>
+
+                        <p>
+                            Join our church family as we gather to praise God,
+                            share His Word and grow together in faith.
+                        </p>
+
+                        <div class="service-details">
+
+                            <div class="service-detail">
+                                <span class="detail-icon">◷</span>
+                                <div>
+                                    <small>Worship Time</small>
+                                    <strong>Time to be confirmed</strong>
+                                </div>
+                            </div>
+
+                            <div class="service-detail">
+                                <span class="detail-icon">⌖</span>
+                                <div>
+                                    <small>Location</small>
+                                    <strong>Our Church Auditorium <br> Asa 1, Otukpo, Benue state</strong>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="#contact" class="sunday-button">
+                            Plan Your Visit <span>→</span>
+                        </a>
+
+                    </div>
+
+                    <div class="sunday-welcome">
+
+                        <span class="welcome-decoration">"</span>
+
+                        <h3>Come as You Are.</h3>
+
+                        <p>
+                            Whether you're visiting for the first time,
+                            returning to church or looking for a church
+                            family, you are welcome here.
+                        </p>
+
+                        <div class="welcome-divider"></div>
+
+                        <span class="welcome-signature">
+                            A place of faith, hope and love.
+                            In God we Trust
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- QUICK ACTIONS SECTION -->
+        <section class="quick-actions-section">
+            <div class="quick-actions-container">
+
+                <a href="#contact" class="quick-action-card">
+                    <div class="quick-action-icon">🗺️</div>
+                    <h3>Find Us</h3>
+                    <p>Find your way to our church.</p>
+                    <span class="quick-action-arrow">→</span>
+                </a>
+
+                <a href="#give" class="quick-action-card">
+                    <div class="quick-action-icon">❤️‍🔥</div>
+                    <h3>Support</h3>
+                    <p>Support the work of God's kingdom.</p>
+                    <span class="quick-action-arrow">→</span>
+                </a>
+
+                <a href="#livestream" class="quick-action-card">
+                    <div class="quick-action-icon">⏯️</div>
+                    <h3>Livestream</h3>
+                    <p>Watch our services live.</p>
+                    <span class="quick-action-arrow">→</span>
+                </a>
+
+                <a href="#contact" class="quick-action-card">
+                    <div class="quick-action-icon">✉️</div>
+                    <h3>Get in Touch</h3>
+                    <p>We would love to hear from you.</p>
+                    <span class="quick-action-arrow">→</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- WORSHIP MOMENTS SECTION -->
+<section class="worship-section" id="livestream">
+
+    <div class="worship-container">
+
+        <div class="worship-heading">
+            <span class="worship-label">
+                <span></span>
+                EXPERIENCE OUR WORSHIP
+                <span></span>
+            </span>
+
+            <h2>Moments of <span>Praise & Worship.</span></h2>
+
+            <p>
+                Experience the joy of worship, the beauty of fellowship
+                and the presence of God through moments shared by
+                our church family.
+            </p>
+        </div>
+
+        <div class="worship-video-wrapper">
+
+            <video
+                class="worship-video"
+                controls
+                preload="metadata"
+                playsinline
+                poster="{{ url_for('static', filename='images/church-about.jpg') }}"
+            >
+                <source
+                    src="{{ url_for('static', filename='videos/worship.mp4') }}"
+                    type="video/mp4"
+                >
+
+                Your browser does not support HTML5 video.
+            </video>
+
+        </div>
+
+        <div class="worship-caption">
+            <span class="worship-caption-icon">✦</span>
+
+            <div>
+                <h3>United in Praise, Growing in Faith.</h3>
+                <p>One church family, worshipping together.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+</body>
+</html>

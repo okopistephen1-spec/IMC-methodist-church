@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Methodist Church</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <a href="{{ url_for('home') }}" class="church-brand">
+            <img
+                src="{{ url_for('static', filename='images/methodist-logo.jpeg') }}"
+                alt="Methodist Church Nigeria Logo"
+                class="brand-emblem"
+            >
+
+            <div class="brand-text">
+                <strong>Your Methodist Church</strong>
+                <span>In God we Trust</span>
+            </div>
+        </a>
+
+        <div class="header-actions">
+            <a href="{{ url_for('home') }}#give" class="give-button">Give</a>
+
+            <a href="{{ url_for('home') }}#profile"
+               class="profile-button"
+               aria-label="Profile">♙</a>
+
+            <a href="{{ url_for('home') }}"
+               class="menu-button"
+               aria-label="Back to homepage">⌂</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ABOUT HERO -->
+        <section class="about-page-hero">
+
+            <div class="about-page-hero-content">
+                <span class="about-label">
+                    <span></span>
+                    WHO WE ARE
+                </span>
+
+                <h1>
+                    A Church Built on
+                    <span>Faith, Love and Service.</span>
+                </h1>
+
+                <p>
+                    Discover our faith, our values and the story
+                    behind our church family.
+                </p>
+
+                <a href="{{ url_for('home') }}" class="about-button">
+                    Back to Homepage <span>→</span>
+                </a>
+            </div>
+
+            <div class="about-page-hero-image">
+                <img
+                    src="{{ url_for('static', filename='images/church-about.jpeg') }}"
+                    alt="Our Methodist Church community"
+                >
+            </div>
+
+        </section>
+
+        <!-- ABOUT INTRODUCTION -->
+        <section class="about-page-intro">
+            <div class="about-page-intro-container">
+
+                <span class="about-label">
+                    <span></span>
+                    ABOUT OUR CHURCH
+                </span>
+
+                <h2>More Than a Church, We Are a Family.</h2>
+
+                <p>
+                    We are a Methodist Church family committed to
+                    sharing God's love, growing in faith and serving
+                    our community.
+
+                    We believe that the church is more than a building.
+                    It is a family where people come together to worship,
+                    encourage one another, discover God's purpose and
+                    make a positive difference in the world around them.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- OUR VALUES -->
+        <section class="about-page-values">
+            <div class="about-page-values-container">
+
+                <div class="about-page-section-heading">
+                    <span class="about-label">
+                        <span></span>
+                        WHAT WE BELIEVE
+                    </span>
+
+                    <h2>Our Values</h2>
+
+                    <p>
+                        The principles that guide our faith,
+                        our worship and our service to others.
+                    </p>
+                </div>
+
+                <div class="about-page-values-grid">
+
+                    <div class="about-page-value-card">
+                        <span>✦</span>
+                        <h3>Faith</h3>
+                        <p>
+                            Growing in our relationship with God
+                            through prayer, worship and His Word.
+                        </p>
+                    </div>
+
+                    <div class="about-page-value-card">
+                        <span>♡</span>
+                        <h3>Love</h3>
+                        <p>
+                            Welcoming people with compassion,
+                            kindness and the love of Christ.
+                        </p>
+                    </div>
+
+                    <div class="about-page-value-card">
+                        <span>✝</span>
+                        <h3>Service</h3>
+                        <p>
+                            Following Christ's example by serving
+                            our neighbours and community.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
